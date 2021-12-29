@@ -109,7 +109,6 @@ export default function Favorite(props) {
             <TouchableWithoutFeedback
             onPress={() => props.navigation.navigate("LeagueDetails", { item, isFav })}
             >
-                <>
             <View style={{ borderWidth: 0.5, borderColor: "#000", marginVertical: 4, padding: 10, marginHorizontal: 10, borderRadius: 5, backgroundColor: "#FFF", justifyContent: "space-between", flexDirection: 'row' }}>
                 <View style={{ width: (width - 70) }}>
                     {item.strLeague ? <Text>League : {item.strLeague}</Text> : null}
@@ -124,7 +123,6 @@ export default function Favorite(props) {
                     onPress={() => onPressHeart({ key: "favoriteLeagues", item, isFav })}
                 />
             </View>
-            </>
             </TouchableWithoutFeedback>
         );
     }
